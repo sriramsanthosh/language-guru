@@ -1,0 +1,153 @@
+body{
+    /* background-color: red; */
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-family: 'Roboto Slab', serif;
+}
+
+.container, .bottom-text{
+    border-radius: 1.5px;
+    margin: auto;
+    margin-top: 40px;
+    width: 70%;
+    max-width: 360px;
+    border: 1px solid lightgray;
+}
+
+
+
+.form-container{
+    padding: 20px 0;
+    text-align: center;
+}
+
+.form-container div{
+    margin: 10px 0;
+}
+
+.form-container div input, .login-button{
+    padding: 10px;
+    width: 70%;
+    border-radius: 4px;
+    background-color: whitesmoke;
+    min-width: 100px;
+    border: 1px solid lightgray;
+    font-family: 'Roboto Slab', serif;
+}
+
+.login-button{
+    background-color: rgb(32, 184, 244);
+    border: none;
+    color: white;
+    font-weight: bolder;
+}
+
+.sign-up-button, .log-in-button{
+    border: none;
+    background-color: transparent;
+    font-size: inherit;
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.login-button:hover{
+    cursor: pointer;
+}
+
+
+.form-container div input:focus{
+    /* outline: none; */
+    outline-color: darkgrey;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.or{
+    margin-top: -20px;
+}
+
+.or div span{
+    background-color: white;
+}
+
+.or-container{
+    width: 80%;
+    margin: auto;
+}
+
+.login-button{
+    width: inherit;
+}
+
+.bottom-text{
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px 0;
+    max-width: 360px;
+}
+
+.logo-container{
+    text-align: center;
+    margin: 15px 0;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+}
+
+.logo-text:hover{
+    cursor: pointer;
+}
+
+
+.login-option{
+    margin: auto;
+    margin: 20px 0;
+}
+
+.login-option-container{
+    text-decoration: none;
+    color: black;
+}
+
+.login-box{
+    border: 1px solid black;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px 2px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+
+.login-box:hover{
+    transition: 1s;
+    color: white;
+    background-color: black; 
+}
+
+.fa-crown{
+    rotate: 45deg;
+    color: rgb(252, 181, 0);
+    
+}
+
+.footer-container{
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media screen and (max-width:450px){
+    .container,
+    .bottom-text{
+        width: 100%;
+        border: none;
+    }
+}
+

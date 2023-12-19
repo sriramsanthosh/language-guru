@@ -1,0 +1,47 @@
+<%- include("./partials/header"); -%> 
+
+    <link rel="stylesheet" href="/css/home.css">
+
+    <main>
+
+        <div  class="login-container">
+
+            <div class="container login-container">
+                <div class="logo-container">
+                <div class="logo-text">
+                    Lang Guru <i class="fa-solid fa-crown"></i>
+                </div>
+            </div>
+            <form action="/" method="post" class="form-container">
+                <div>
+                    <input type="text" name="email" id="email" placeholder="Email Address *" required>
+                </div>
+                <div>
+                    <input type="password" name="password" id="password" placeholder="Password *" required>
+                </div>
+                <div>
+                    <button class="login-button">Log in</button>
+                </div>
+            </form>
+
+            <div class="or-container">
+                <hr>
+                
+                <div class="or text-center">
+                    <div><span>&nbsp;&nbsp; OR &nbsp;&nbsp;</span></div>
+                </div>
+            </div>
+            
+            <a href="#" class="login-option-container will-update-in-future"><div class="text-center login-option login-box"><i class="fa-brands fa-google"></i> &nbsp;Log in with Google</div></a>
+            <div class="text-center login-option will-update-in-future"><a href="#">Forgot password?</a></div>
+            
+        </div>
+        
+        <div class="bottom-text">
+            Don't have an account? <a href="/"><button class="sign-up-button">Sign&nbsp;up</button></a>
+        </div>
+    </div>
+
+    </main>
+
+<%- include("./partials/footer"); -%> 

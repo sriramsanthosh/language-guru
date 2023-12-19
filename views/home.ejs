@@ -1,11 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Jai Shri Ram</h1>
-</body>
-</html>
+<%- include("./partials/header"); -%> 
+
+    <link rel="stylesheet" href="/css/home.css">
+
+    <main>
+
+<div class="signup-container">
+
+    <div class="container signup-container">
+        <div class="logo-container">
+            <div class="logo-text">
+                Lang Guru <i class="fa-solid fa-crown"></i>
+            </div>
+        </div>
+        <form action="/" method="post" class="form-container">
+            <div>
+                <input type="text" name="fname" id="fname" placeholder="First Name *" required>
+            </div>
+            <div>
+                <input type="text" name="lname" id="lname" placeholder="Last Name *" required>
+            </div>
+            <div>
+                <input type="text" name="email" id="email" placeholder="Email Address *" required>
+            </div>
+            <div>
+                <input type="password" name="password" id="password" placeholder="Password *" required>
+            </div>
+            <div>
+                <input type="password" name="conf_password" id="conf_password" placeholder="Confirm Password *" required>
+            </div>
+            <div>
+                <button class="login-button">Create account</button>
+            </div>
+        </form>
+        
+        
+    </div>
+    
+    <div class="bottom-text">
+        Already have an account? <a href="/login"><button class="log-in-button">Log&nbsp;in</button></a>
+    </div>
+</div>
+
+</main>
+
+<%- include("./partials/footer"); -%> 
