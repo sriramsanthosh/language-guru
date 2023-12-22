@@ -3,11 +3,7 @@ const mongoose = require("mongoose");
 const uri = "mongodb+srv://isrs444:XBg3C1rK5PzkMuOK@cluster0.d2fvlsa.mongodb.net/?retryWrites=true&w=majority";
 
 const db = async() => {
-  await mongoose.connect(uri, {
-    useNewUrlParser: true,
-    // useCreateIndex: true,
-    useUnifiedTopology: true,
-  });
+  await mongoose.connect(uri);
   
   mongoose.connection.once("open" , async() => {
     console.log("Connected to mongo");
