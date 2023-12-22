@@ -1,0 +1,205 @@
+body{
+    font-size: 1.3rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.language-box{
+    background-color: red;
+    padding: 95px 75px;
+    text-align: center;
+    width: 150px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: larger;
+    transition:0.25s ease;   
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid lightgray;
+}
+
+.language-box:hover{
+    transform: scale(1.1);
+}
+
+.language-box-container{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.language-box-container-heading{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+.level-box{
+    width: 250px;
+    margin: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 424px){
+    .level-box{
+        width: 200px;
+        padding: 40px;
+        font-size: medium;
+    }
+}
+
+.side-nav-container{
+    padding: 80px 20px;
+    background-color: whitesmoke;
+}
+
+i{
+    font-size: 2rem;
+    
+}
+
+.side-nav-container div{
+    padding: 20px 20px;
+    text-transform: uppercase;
+}
+
+.aside-container1{
+    border-right: 2px solid lightgray;
+    width: 305px;
+    height: 100vh;
+    position: fixed;
+    overflow-y: auto;
+    background-color: whitesmoke;
+}
+
+.aside-container2{
+    padding-left: 305px;
+
+}
+
+.disappear{
+    visibility: visible;
+    display: block;
+}
+
+.inline{
+    display: inline-flex;
+}
+
+.main-heading{
+    text-align: center;
+    /* margin: auto; */
+    padding: 10px 0;
+    margin: 0;
+    background-color: whitesmoke;
+    border-bottom: 2px solid lightgray;
+    position: fixed;
+    width: 80%;
+    /* width: 100%; */
+}
+.space-padding{
+    padding: 40px 0;
+}
+
+.english{
+    background-image: url('../images/languages/English.jpg');
+    
+}
+
+.spanish{
+    background-image: url('../images/languages/spanish.jpg');
+}
+
+.hindi{
+    background-image: url('../images/languages/Hindi.jpeg');
+}
+
+.telugu{
+    background-image: url('../images/languages/telugu.webp');
+}
+
+.kannada{
+    background-image: url('../images/languages/kannada.png');
+}
+
+.tamil{
+    background-image: url('../images/languages/tamil.jpg');
+}
+
+
+.malayalam{
+    background-image: url('../images/languages/malayalam.png');
+}
+
+@media screen and (max-width:1299px){
+    .disappear{
+        display: none;
+        visibility: hidden;
+    }
+    .aside-container1{
+        width: 110px;
+    }
+
+    .aside-container2{
+        padding-left: 110px;
+    }
+
+    .main-heading{
+        width: 92%;
+    }
+}    
+
+@media screen and (max-width:1100px){
+
+    .aside-container1{
+        width: 100%;
+        border: 0;
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+    }
+
+    .aside-container2{
+        padding:0;
+    }
+
+    .main-heading{
+        width: 100%;
+    }
+
+    .side-nav-container{
+        position: fixed;
+        bottom: 0;
+        display: inline-flex;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-content: space-between;
+        padding: 0;
+        border-top: 2px solid lightgray;
+        /* background-color: whitesmoke; */
+    }
+
+    .side-nav-container div{
+        align-content: space-between;
+        padding: 10px;
+        width: 100%;
+    }
+    
+    .side-nav-container div a{
+        
+        font-size: 1.0rem;
+    }
+
+    
+    
+
+}

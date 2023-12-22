@@ -1,17 +1,35 @@
 <%- include("./partials/header"); -%> 
 
-
 <main>
-    <aside>
-        
-    </aside>
-    <aside>
-        <h1 class="text-center">Hey <%= user.fname %>!</h1>
-    </aside>
+    
+<link rel="stylesheet" href="css/languages.css">
 
 
+    <aside class="aside-container1">
+        <div class="side-nav-container">
+            <div><a href=""><i class="fa-solid fa-house inline"></i> <span class="disappear inline">Home</span></a></div>
+            <div><a href=""><i class="fa-solid fa-user inline"></i> &nbsp;<span class="disappear inline">Profile</span></a></div>
+            <div><a href=""><i class="fa-solid fa-shield-halved inline"></i>&nbsp; <span class="disappear inline">LeaderBoard</span></a></div>
+            <div><a href=""><i class="fa-solid fa-coins inline"></i>&nbsp; <span class="disappear inline">Points</span></a></div>
+            <div><a href=""><i class="fa-solid fa-right-from-bracket inline"></i>&nbsp; <span class="disappear inline">Log out</span></a></div>
+        </div>
+    </aside>
+    <aside class="aside-container2">
+        <h1 class="text-center main-heading">Lang Guru <i class="fa-solid fa-crown"></i></h1>
+        <div class="space-padding"></div>
+        <h1 class="language-box-container-heading">Hey <%= user.fname %>!</h1>
+        <h3 class="language-box-container-heading">Select language you gonna practice with..</h3>
+        <div class="language-box-container">
+            <a href="/english"><div class="language-box english"></div></a>
+            <a href="/spanish"><div class="language-box spanish"></div></a>
+            <a href="/hindi"><div class="language-box hindi"></div></a>
+            <a href="/telugu"><div class="language-box telugu"></div></a>
+            <a href="/tamil"><div class="language-box tamil"></div></a>
+            <a href="/kannada"><div class="language-box kannada"></div></a>
+            <a href="/malayalam"><div class="language-box malayalam"></div></a>
+        </div>
+    </aside>
 
 </main>
-
 
 <%- include("./partials/footer"); -%> 
